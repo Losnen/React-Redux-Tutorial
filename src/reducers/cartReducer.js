@@ -2,7 +2,7 @@ import {
   LOAD_CART_ITEMS,
   ADD_CART_ITEM,
   REMOVE_CART_ITEM
-} from './actions/types'
+} from '../actions/types'
 
 import initialState from './initialState'
 

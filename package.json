@@ -4,6 +4,7 @@
   "description": "Ecommerce app with React and Redux",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/Losnen/React-Redux-Tutorial#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -28,7 +30,8 @@
     "redux-logger": "^3.0.6",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

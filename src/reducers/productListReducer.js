@@ -5,7 +5,7 @@ import {
   SAVE_PRODUCT_SUCCESS,
   SAVE_PRODUCT_FAILURE,
   SAVE_PRODUCT_INIT
-} from './actions/types'
+} from '../actions/types'
 
 import initialState from './initialState'
 

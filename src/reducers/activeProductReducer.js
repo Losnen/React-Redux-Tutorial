@@ -3,7 +3,7 @@ import {
   FETCH_PRODUCT_SUCCESS,
   FETCH_PRODUCT_FAILURE,
   FETCH_PRODUCT_INIT
-} from './actions/types'
+} from '../actions/types'
 
 import initialState from './initialState'
 

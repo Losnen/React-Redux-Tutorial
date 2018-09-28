@@ -19,7 +19,7 @@ module.exports = {
     path.join(__dirname, 'src', 'index.jsx')
   ],
 
-  outputs: {
+  output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/'
