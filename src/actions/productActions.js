@@ -8,7 +8,7 @@ import {
   SAVE_PRODUCT_SUCCESS,
   SAVE_PRODUCT_FAILURE,
   SAVE_PRODUCT_INIT
-} from 'types'
+} from './types'
 
 import API from '../api'
 

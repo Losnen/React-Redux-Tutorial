@@ -1,6 +1,6 @@
 import fetch, { Headers } from 'isomorphic-fetch'
 
-const baseURL = 'https://ecommerce-api-a4661.herokuapp.com/api/products'
+const baseURL = 'https://ecommerce-api-a4661.herokuapp.com/api'
 
 const API = {
   products: {
