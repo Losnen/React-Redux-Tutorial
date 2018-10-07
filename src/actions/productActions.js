@@ -13,10 +13,10 @@ import {
 import API from '../api'
 
 // Action Creators
-export function fetchProductsSuccess (products) {
+export function fetchProductsSuccess (product) {
   return {
     type: FETCH_PRODUCTS_SUCCESS,
-    payload: products
+    payload: product
   }
 }
 
