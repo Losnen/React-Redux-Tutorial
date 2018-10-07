@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router'
 
-const Product = ({ _id, name, description, image, price, deliveryStimate, category }) => (
+const Product = ({ _id, name, description, image, price, deliveryStimate, category, onAddItem }) => (
   <div className='col-xs-12 col-sm-6 col-lg-4'>
     <div className='card'>
       <Link to={`/detail/${_id}`} >
@@ -25,7 +25,10 @@ const Product = ({ _id, name, description, image, price, deliveryStimate, catego
         </li>
       </ul>
       <div className='card-block'>
-        <button className='btn btn-primary'>
+        <button
+          className='btn btn-primary'
+          onClick={() => onAddItem({ _id, name, description, image, price, deliveryStimate, category })}
+        >
           <span className='fa fa-cart-plus' /> Añadir al carrito
         </button>
       </div>
@@ -40,7 +43,8 @@ Product.propTypes = {
   image: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   deliveryStimate: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired
+  category: PropTypes.string.isRequired,
+  onAddItem: PropTypes.func.isRequired
 }
 
 export default Product
