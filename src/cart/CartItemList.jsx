@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import uuid from 'uuid'
 
-import { CartItem } from './CartItem'
+import CartItem from './CartItem'
 
 const CartItemList = ({ items }) => (
   <div className='list-group'>
