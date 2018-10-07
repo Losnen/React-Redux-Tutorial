@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import uuid from 'uuid'
 
 import Product from './Product'
 
@@ -8,7 +9,7 @@ const ProductList = ({ loading, products, onAddItem }) => (
       {
         products.map(product => (
           <Product
-            key={product._id}
+            key={uuid.v4()}
             onAddItem={onAddItem}
             {...product}
           />
