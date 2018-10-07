@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <br />
         {this.props.children}
         <footer> &copy; 2018 </footer>
       </div>

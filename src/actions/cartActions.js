@@ -16,9 +16,9 @@ export function addCartItem (item) {
     payload: item
   }
 }
-export function removeCartItem (item) {
+export function removeCartItem (id) {
   return {
     type: REMOVE_CART_ITEM,
-    payload: item
+    payload: id
   }
 }
